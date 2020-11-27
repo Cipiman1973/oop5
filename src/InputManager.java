@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public enum InputManager {
-    ME;
 
     public static String loadInput(){
 
