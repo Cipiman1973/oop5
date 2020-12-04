@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public enum LanguageManager {
-    INSTANCE;
+    INSTANCE("change language");
 
     private String language;
 
