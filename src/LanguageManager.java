@@ -3,7 +3,7 @@ import java.util.Scanner;
 public enum LanguageManager {
     INSTANCE;
 
-    private Language language;
+    private String language;
 
     public Language getLanguage() {
 
@@ -11,7 +11,7 @@ public enum LanguageManager {
 
     }
 
-    public void setLanguage(Language language) {
+    public void setLanguage(String language) {
 
         this.language = language;
 
