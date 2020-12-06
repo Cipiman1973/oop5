@@ -1,34 +1,34 @@
 import java.util.Scanner;
 
 public enum LanguageManager {
-    INSTANCE("change language");
+    
+    INSTANCE;
 
-    private String language;
+    private Language language;
 
     public Language getLanguage() {
-
+        
         return language;
 
     }
 
-    public void setLanguage(String language) {
+    public void setLanguage(Language language) {
 
         this.language = language;
-
     }
 
     public void changeLanguage(){
-
+        
         String nextLine = InputManager.ME.loadInput();
-
+        
         if (nextLine.equals("cs")) {
-
+            
             LanguageManager.INSTANCE.setLanguage(Language.CESTINA);
-
+            
         } else if (nextLine.equals("en")) {
-
+            
             LanguageManager.INSTANCE.setLanguage(Language.ENGLISH);
-
+            
         }
     }
 }
